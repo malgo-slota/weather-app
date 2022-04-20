@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+    <body>
+        <div class="main-container">
+            <div class="left-side-wrapper">
+                
+                <div class="weather-today">
+                    <div class="nav-container">
+
+                    <!-- <button class="search-btn">Search for places</button> -->
+                            <label class="search-places-btn"><input type="checkbox" class="open-places-btn">Search for places</label>
+                                 
+                                <!-- hidden nav -->
+                                <div class="navigation hide-navigation">
+                                    <button class="close-btn"><span class="material-icons">close</span></button>
+                                    <div class="input-wrapper">
+                                        <input type="text" class="location-input" placeholder="search location">
+                                        <label class="search-btn-label"><input type="button" class="search-btn">Search</label>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end hidden nav --> 
+
+                        <button class="gps-round-btn">
+                            <span class="material-icons">gps_fixed</span>
+                        </button>
+                </div>
+                    
+
+
+
+                    <!-- weather -->
+                    <div class="img-wrapper">
+                        <div class="clouds-bg"></div>    
+                        <img src="" class="weather-status-icon" alt="weather icon">
+                    </div>
+                    
+                   
+                   
+                    <div class="temp-today">
+                        <span></span>
+                    </div>
+                    <div class="weather-status">
+                    </div>
+                    <div> 
+                        <div class="today-data"><span class="today"></span></div>
+                        <div class="localistaion">
+                            <span class="material-icons">location_on</span>
+                            <span class="location-name"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- weather end -->
+            </div>
+
+            <div class = "right-side-wrapper">
+                <div class="degree-format-container">
+                    <input type="button" value="&deg;C">
+                    <input type="button" value="&deg;F">
+                </div>
+               
+                <div class="next-days-container">
+                    <!-- weather next day card -->
+                </div>
+
+                <div class="today-other-container">
+                    <h1 class="highlights-header">Today's Highlights</h1>
+                    <div class="other-parameters">
+                        <div class="wind-status">
+                            <h3>Wind Status</h3>
+                            <div class="wind-value"></div>
+                            <div>
+                                <span></span>
+                                <div class="wind-direction-deg"></div>
+                            </div>
+                        </div>
+                        <div class="humidity">
+                            <h3>Humidity</h3>
+                            <div class="humidity-value"></div>
+                            
+                            <div class="humidity-bar-container">
+                                <div class="humidity-bar-wrapper">
+                                    <div class="humidity-lvl-bar">
+                                    </div>
+                                    <label class="counter"><span>0</span><span>50</span><span> 100</span></label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="visibility">
+                            <h3>Visibility</h3>
+                            <div class="visibility-value"></div>
+                        </div>
+                        <div class="air-pressure">
+                            <h3>Air Pressure</h3>
+                            <div class="pressure-value"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribution">
+                    created by <a href="" target="_blank">malgo-slota</a>. - 
+                    <a href="#">devChallenges.io</a>.
+                </div>
+            </div>
+        </div>
+        
+        <script type='text/javascript' src='config.js'></script>
+       <script src="status.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="app.js"></script>
+         
+    </body>
+</html>
